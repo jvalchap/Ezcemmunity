@@ -2,4 +2,42 @@
   padding: 0rem;
   margin: 0rem;
 }
+
+/*--------------------FONT--------------------*/
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+
+div {
+  font-family: 'Merriweather', serif;
+}
+
+/*--------------------FOOTER--------------------*/
 /*# sourceMappingURL=style.css.map */
