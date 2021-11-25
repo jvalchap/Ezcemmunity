@@ -1,23 +1,20 @@
-$font__h1: 5rem;
-$font__p: 1.2rem;
+$font__abouth1: 5rem;
+$font_text-mobile: 1.1rem;
+
 
 *{
     padding: 0rem;
     margin: 0rem;
 }
 
-
-
 /*--------------------FONT--------------------*/
 
 h1{
     font-family: 'Merriweather', serif;
-    font-size: $font__h1;
 }
 
 h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: $font__h1/2;
 }
 
 h3{
@@ -38,7 +35,7 @@ h6{
 
 p{
     font-family: 'Montserrat', sans-serif;
-    font-size: $font__p;
+    font-size: 1.1rem;
 }
 
 div{
@@ -46,9 +43,113 @@ div{
 }
 
 
-
-
-
-
 /*--------------------FOOTER--------------------*/
+
+footer{
+    p{
+        color: rgb(58, 57, 57);
+    }
+    background-color: #828a95;
+}
+
+
+
+
+
+
+/*--------------------INDEX--------------------*/
+
+/*---------------MAIN---------------*/
+
+main{
+    background-color: #ccd7e4;
+}
+
+.index__main{
+    h1{
+        font-size: $font__abouth1/1.4; 
+    }
+    h2{
+        font-size: ($font__abouth1/1.4)/2;
+    }
+}
+
+/*---------------SECTIONS---------------*/
+
+.phrase{
+    background-color: #CEEAF7;
+}
+
+
+
+
+/*--------------------FOOD&DIET--------------------*/
+
+/*---------------MAIN---------------*/
+
+
+.food_main{
+    h1{
+        font-size: $font__abouth1/1.5; 
+    }
+    h2{
+        font-size: $font__abouth1/2.6;
+    }
+}
+
+
+
+
+/*--------------------EXERCISE--------------------*/
+
+/*---------------MAIN---------------*/
+
+.exercise__main{
+    h1{
+        font-size: $font__abouth1/1.4; 
+    }
+    h2{
+        font-size: $font__abouth1/2.6;
+    }
+}
+
+
+/*---------------SECTIONS---------------*/
+
+
+.exercise__videos{
+    background-color: #d5c9df;
+}
+
+
+
+/*--------------------ABOUT--------------------*/
+
+/*---------------MAIN---------------*/
+
+.about__main{
+    h1{
+       font-size: $font__abouth1; 
+    }
+    h2{
+        font-size: $font__abouth1/2;
+    }
+}
+
+
+/*---------------SECTIONS---------------*/
+
+.about__description{
+    background-image: url(/img/about__banner.jpg);
+}
+
+.about__description-div{
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    p{
+        color: black;
+        padding: 0.5rem;
+    }
+}
 

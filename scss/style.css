@@ -6,12 +6,10 @@
 /*--------------------FONT--------------------*/
 h1 {
   font-family: 'Merriweather', serif;
-  font-size: 5rem;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
 }
 
 h3 {
@@ -32,7 +30,7 @@ h6 {
 
 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 div {
@@ -40,4 +38,81 @@ div {
 }
 
 /*--------------------FOOTER--------------------*/
+footer {
+  background-color: #828a95;
+}
+
+footer p {
+  color: #3a3939;
+}
+
+/*--------------------INDEX--------------------*/
+/*---------------MAIN---------------*/
+main {
+  background-color: #ccd7e4;
+}
+
+.index__main h1 {
+  font-size: 3.57143rem;
+}
+
+.index__main h2 {
+  font-size: 1.78571rem;
+}
+
+/*---------------SECTIONS---------------*/
+.phrase {
+  background-color: #CEEAF7;
+}
+
+/*--------------------FOOD&DIET--------------------*/
+/*---------------MAIN---------------*/
+.food_main h1 {
+  font-size: 3.33333rem;
+}
+
+.food_main h2 {
+  font-size: 1.92308rem;
+}
+
+/*--------------------EXERCISE--------------------*/
+/*---------------MAIN---------------*/
+.exercise__main h1 {
+  font-size: 3.57143rem;
+}
+
+.exercise__main h2 {
+  font-size: 1.92308rem;
+}
+
+/*---------------SECTIONS---------------*/
+.exercise__videos {
+  background-color: #d5c9df;
+}
+
+/*--------------------ABOUT--------------------*/
+/*---------------MAIN---------------*/
+.about__main h1 {
+  font-size: 5rem;
+}
+
+.about__main h2 {
+  font-size: 2.5rem;
+}
+
+/*---------------SECTIONS---------------*/
+.about__description {
+  background-image: url(/img/about__banner.jpg);
+}
+
+.about__description-div {
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.about__description-div p {
+  color: black;
+  padding: 0.5rem;
+}
 /*# sourceMappingURL=style.css.map */
