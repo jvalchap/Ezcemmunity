@@ -47,7 +47,9 @@
             </nav>
         </header>
 
-        <main class="ps-2 pe-3 d-flex flex-column align-items-start food_main">
+
+
+        <main class="ps-3 pe-3 d-flex flex-column align-items-start food__main">
             <div>
                 <h1 class="p-1">Food and Diets</h1>
             </div>
@@ -56,11 +58,122 @@
             </div>
         </main>
 
-        <section>
-            <div>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, rerum quam! Molestiae tempora praesentium sed tenetur ut, porro dolorem soluta, quam accusantium molestias nihil atque expedita consequuntur ipsa sunt dicta.
+
+
+        <section class="food__description">
+            <div class="p-3">
+                <p>There isn't a single diet that eliminates eczema in everyone, but a good rule of thumb is to avoid any foods that seem to make your symptoms worse.</p>
+                <p>Focus on a healthy diet filled with fresh fruits and vegetables, healthy fats, and lean protein.</p>
             </div>
         </section>
+
+
+
+
+        <section class="food__recipes">
+            <div>
+                <div class="ps-2 pe-2 pt-2"><h3>Quick and easy recipes</h3></div>
+                <div class="p-3">
+                    <div class="card" style="width: 24rem;">
+                        <img src="img/potatoes.jpeg" class="card-img-top" alt="Roasted potatoes photo">
+                        <div class="card-body">
+                        <h5 class="card-title fw-bold">Roasted Potatoes with Chickpeas and Leeks</h5>
+                        <p class="card-text">Perfect as a side dish or main meal, this roasted potato dish is simple, tasty and boasting with eczema friendly ingredients.</p>
+                        <a href="#" class="btn btn-dark">Full Recipe</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3">
+                    <div class="card" style="width: 24rem;">
+                        <img src="img/sweetpotatoes.jpeg" class="card-img-top" alt="Sweet Potatoes Salad Photo">
+                        <div class="card-body">
+                        <h5 class="card-title fw-bold">Loaded Sweet Potato Fries</h5>
+                        <p class="card-text">This dish will be loved by all the family for an easy weeknight meal and perfect for lunch the following day.</p>
+                        <a href="#" class="btn btn-dark">Full Recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="food__carousel">
+            <div>
+                <div class="p-3">
+                    <h3>Foods to avoid (more during flare ups!)</h3>
+                </div>
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>    
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/dairy.jpg" class="d-block w-100" alt="Photo of dairy products like milk and cheese">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Dairy</h5>
+                                <p> After exposure to certain foods, your body might react in what is called “food responsive eczema.”</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/tomatoes.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Tomatoes</h5>
+                                <p>While they may not actually trigger an allergic response, they can cause some people to experience eczema flare-ups.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/spices.jpg" class="d-block w-100"
+                                alt="Photo of many spices on a table including paprika and curry">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Spices</h5>
+                                <p>Foods containing nickel. Nickel is an ingredient known to encourage symptoms of dyshidrotic eczema. Dyshidrotic eczema is a type of eczema that produces small blisters on the hands and the feet.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/citrusfruits.png" class="d-block w-100"
+                                alt="Photo of many spices on a table including paprika and curry">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Citrus Fruits</h5>
+                                <p>they also contain an allergen called Balsam of Peru, which can be problematic for some people with eczema.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="p-3" id="redirect_form">
+            <div>
+                <p>Remember that we are all diferent!</p> 
+                <p>What it works for somebody, may not work for you. You need to keep checking out new things and consuming in a thoughtfull way.</p>
+                <p>If you want to share your ideas, research and experience please fill out our form!</p>
+            </div>
+            <div class="d-grid d-flex justify-content-end">
+                <a class="btn btn-dark btn-sm" href="about.html" role="button">Click here</a>
+            </div>
+        </section>
+
+
 
         <footer class="d-flex flex-wrap justify-content-between align-items-center border-top p-2" >
             <div class="col-md-4 align-items-center">
@@ -75,8 +188,6 @@
                 </ul>
             </div>
         </footer>
-
-
 
 
 

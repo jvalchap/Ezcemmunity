@@ -1,5 +1,10 @@
-$font__abouth1: 5rem;
-$font_text-mobile: 1.1rem;
+$font__size-mobile: 5rem;
+$font__text-mobile: 1.1rem;
+$color_rosa: #DCB8CB;
+$color_lila: #D5C9DF;
+$color_plateado: #828a95;
+$color_gris: #ccd7e4;
+$color_celeste: #CEEAF7;
 
 
 *{
@@ -7,29 +12,37 @@ $font_text-mobile: 1.1rem;
     margin: 0rem;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+#redirect_form{
+    p{
+        font-size: $font__text-mobile;
+    }
+}
+
+
+
 /*--------------------FONT--------------------*/
 
-h1{
+h1, h3, div{
     font-family: 'Merriweather', serif;
 }
 
-h2{
-    font-family: 'Montserrat', sans-serif;
-}
-
-h3{
-    font-family: 'Merriweather', serif;
-}
-
-h4{
-    font-family: 'Montserrat', sans-serif;
-}
-
-h5{
-    font-family: 'Montserrat', sans-serif;
-}
-
-h6{
+h2, h4, h5, h6{
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -38,9 +51,7 @@ p{
     font-size: 1.1rem;
 }
 
-div{
-    font-family: 'Merriweather', serif;
-}
+
 
 
 /*--------------------FOOTER--------------------*/
@@ -49,10 +60,8 @@ footer{
     p{
         color: rgb(58, 57, 57);
     }
-    background-color: #828a95;
+    background-color: $color_plateado;
 }
-
-
 
 
 
@@ -62,23 +71,24 @@ footer{
 /*---------------MAIN---------------*/
 
 main{
-    background-color: #ccd7e4;
+    background-color: $color_gris;
 }
 
 .index__main{
     h1{
-        font-size: $font__abouth1/1.4; 
+        font-size: $font__size-mobile/1.4; 
     }
     h2{
-        font-size: ($font__abouth1/1.4)/2;
+        font-size: ($font__size-mobile/1.4)/2;
     }
 }
 
 /*---------------SECTIONS---------------*/
 
 .phrase{
-    background-color: #CEEAF7;
+    background-color: $color_celeste;
 }
+
 
 
 
@@ -88,16 +98,22 @@ main{
 /*---------------MAIN---------------*/
 
 
-.food_main{
+.food__main{
     h1{
-        font-size: $font__abouth1/1.5; 
+        font-size: $font__size-mobile/1.6; 
     }
     h2{
-        font-size: $font__abouth1/2.6;
+        font-size: $font__size-mobile/2.6;
     }
 }
 
+.food__recipes{
+    background-color: $color_rosa;
+}
 
+.food__carousel{
+    background-color: $color_celeste;
+}
 
 
 /*--------------------EXERCISE--------------------*/
@@ -106,10 +122,10 @@ main{
 
 .exercise__main{
     h1{
-        font-size: $font__abouth1/1.4; 
+        font-size: $font__size-mobile/1.4; 
     }
     h2{
-        font-size: $font__abouth1/2.6;
+        font-size: $font__size-mobile/2.6;
     }
 }
 
@@ -117,9 +133,34 @@ main{
 /*---------------SECTIONS---------------*/
 
 
-.exercise__videos{
-    background-color: #d5c9df;
+.exercise__pilates{
+    background-color: $color_lila;
 }
+
+.exercise__yoga{
+    background-color: $color_celeste;
+}
+
+.exercise__size{
+    width: 24rem;
+    height: 15rem;
+}
+
+
+
+/*--------------------MEDICATION--------------------*/
+
+/*---------------MAIN---------------*/
+
+.medication__main{
+    h1{
+        font-size: $font__size-mobile/1.2; 
+     }
+     h2{
+         font-size: ($font__size-mobile/1.2)/2;
+     }
+}
+
 
 
 
@@ -129,15 +170,15 @@ main{
 
 .about__main{
     h1{
-       font-size: $font__abouth1; 
+       font-size: $font__size-mobile; 
     }
     h2{
-        font-size: $font__abouth1/2;
+        font-size: $font__size-mobile/2;
     }
 }
 
 
-/*---------------SECTIONS---------------*/
+/*---------------SECTION---------------*/
 
 .about__description{
     background-image: url(/img/about__banner.jpg);
@@ -152,4 +193,3 @@ main{
         padding: 0.5rem;
     }
 }
-

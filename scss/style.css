@@ -3,38 +3,38 @@
   margin: 0rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+#redirect_form p {
+  font-size: 1.1rem;
+}
+
 /*--------------------FONT--------------------*/
-h1 {
+h1, h3, div {
   font-family: 'Merriweather', serif;
 }
 
-h2 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-h3 {
-  font-family: 'Merriweather', serif;
-}
-
-h4 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-h5 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-h6 {
+h2, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
-}
-
-div {
-  font-family: 'Merriweather', serif;
 }
 
 /*--------------------FOOTER--------------------*/
@@ -67,12 +67,20 @@ main {
 
 /*--------------------FOOD&DIET--------------------*/
 /*---------------MAIN---------------*/
-.food_main h1 {
-  font-size: 3.33333rem;
+.food__main h1 {
+  font-size: 3.125rem;
 }
 
-.food_main h2 {
+.food__main h2 {
   font-size: 1.92308rem;
+}
+
+.food__recipes {
+  background-color: #DCB8CB;
+}
+
+.food__carousel {
+  background-color: #CEEAF7;
 }
 
 /*--------------------EXERCISE--------------------*/
@@ -86,8 +94,27 @@ main {
 }
 
 /*---------------SECTIONS---------------*/
-.exercise__videos {
-  background-color: #d5c9df;
+.exercise__pilates {
+  background-color: #D5C9DF;
+}
+
+.exercise__yoga {
+  background-color: #CEEAF7;
+}
+
+.exercise__size {
+  width: 24rem;
+  height: 15rem;
+}
+
+/*--------------------MEDICATION--------------------*/
+/*---------------MAIN---------------*/
+.medication__main h1 {
+  font-size: 4.16667rem;
+}
+
+.medication__main h2 {
+  font-size: 2.08333rem;
 }
 
 /*--------------------ABOUT--------------------*/
@@ -100,7 +127,7 @@ main {
   font-size: 2.5rem;
 }
 
-/*---------------SECTIONS---------------*/
+/*---------------SECTION---------------*/
 .about__description {
   background-image: url(/img/about__banner.jpg);
 }
