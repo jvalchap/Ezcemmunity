@@ -23,7 +23,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html">Ezcemmunity</a>
+                  <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -72,14 +72,14 @@
 
         <section class="food__recipes">
             <div>
-                <div class="ps-2 pe-2 pt-2"><h3>Quick and easy recipes</h3></div>
+                <div class="ps-3 pe-3 pt-2"><h3>Quick and easy recipes</h3></div>
                 <div class="p-3">
                     <div class="card" style="width: 24rem;">
                         <img src="img/potatoes.jpeg" class="card-img-top" alt="Roasted potatoes photo">
                         <div class="card-body">
                         <h5 class="card-title fw-bold">Roasted Potatoes with Chickpeas and Leeks</h5>
                         <p class="card-text">Perfect as a side dish or main meal, this roasted potato dish is simple, tasty and boasting with eczema friendly ingredients.</p>
-                        <a href="#" class="btn btn-dark">Full Recipe</a>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalFirstRecipe">Full Recipe</button>
                         </div>
                     </div>
                 </div>
@@ -89,13 +89,76 @@
                         <div class="card-body">
                         <h5 class="card-title fw-bold">Loaded Sweet Potato Fries</h5>
                         <p class="card-text">This dish will be loved by all the family for an easy weeknight meal and perfect for lunch the following day.</p>
-                        <a href="#" class="btn btn-dark">Full Recipe</a>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalSecondRecipe">Full Recipe</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+                <!-- Modal for the first Recipe-->
+        <div class="modal fade" id="modalFirstRecipe" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal__color">
+                        <h5 class="modal-title fw-bold" id="modalFirstRecipe">Roasted Potatoes with Chickpeas and Leeks</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bold">Ingredients:</p>
+                        <p>4 medium potatoes, peeled and chopped into quarters (about 3cm x 3cm cubes)</p>
+                        <p>1 x 400 gram can of chickpeas (drained and rinsed)</p>
+                        <p>2 heaped cups of leeks, washed and finely diced</p>
+                        <p>2 tablespoons of chives, finely chopped</p>
+                        <p>1-2 crushed garlic cloves (depending on taste)</p>
+                        <p>Low salicylate oil of choice, such as rice bran or sunflower oil</p>
+                        <p>1/4 teaspoon of good quality salt such as Celtic Sea Salt</p>
+                        <p class="fw-bold">How to create it:</p>
+                        <p>Preheat oven to 200°C (400°F). Drizzle the chopped potatoes with a little dash of oil and place neatly in a roasting dish or tray. Drizzle a little dash of oil over the chickpeas and place them around the potatoes in the roasting dish. Place the dish in the preheated oven for about 25-30 minutes or until the potatoes are starting to become soft. At the stage, carefully remove the roasting pan and if needed, gently turn the potatoes over or rearrange the chickpeas if some are cooking quicker then others.</p> 
+                        <p>Mix the leeks and crushed garlic in with the potatoes and chickpeas, sprinkle with the salt and place back into the oven for another 20-25 minutes or until the potatoes are nicely roasted, chickpeas are crispy and leeks are soft. Be sure to check the dish while it is cooking in case any ingredients is cooking quicker than others. When the dish is ready, remove from the oven carefully, garnish with fresh chives, and serve with your favourite eczema friendly protein such as fresh white fish or as a main meal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- Modal for the second Recipe-->
+        <div class="modal fade" id="modalSecondRecipe" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal__color">
+                        <h5 class="modal-title fw-bold" id="modalSecondRecipe">Loaded Sweet Potato Fries (with Eczema Friendly Ingredients)</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="fw-bold">Ingredients:</p>
+                        <p>2 medium-large sweet potatoes (peeled)</p>
+                        <p>1 batch of Cashew Nut Butter or Vegan Mozzarella</p>
+                        <p>3/4 cup of finely chopped shallots</p>
+                        <p>2 cups of finely sliced red cabbage</p>
+                        <p>2 x 425 gram can of black beans</p>
+                        <p>1 x 425 gram can of lentils</p>
+                        <p>1 -2 cloves of fresh crushed garlic or garlic powder</p>
+                        <p>1 teaspoon of good quality sea salt (such as Celtic sea salt)</p>
+                        <p>1/2 teaspoon of ascorbic acid or citric acid</p>
+                        <p>3 teaspoons of maple syrup</p>
+                        <p>1.5 cups of filtered water</p>
+                        <p>1 bunch of baby cos lettuce</p>
+                        <p>rice bran oil or sunflower oil for cooking</p>
+                        <p class="fw-bold">How to create it:</p>
+                        <p>Preheat the oven to 220°C (430°F). Boil the kettle then cover the raw cashew nuts in a bowl with boiling water to soak. Peel and cut the sweet potatoes into thick chips and place onto a baking tray so they are not touching each other (this will stop them from becoming too soft). If needed use another baking tray. Cover the chips with 1-2 teaspoons of rice bran or sunflower oil. Place the sweet potato chips into the oven, the chips should take a total of about 30-40 minutes. Turn them over halfway through as they begin to lightly brown.</p>
+                        <p>Meanwhile: Drain the cashews from the bowl and make the cashew nut butter or vegan mozzarella (links above). If using the cashew nut butter, add more water to thin out the consistency and a dash of garlic powder for additional flavour. Set aside. Finely chop the red cabbage and shallots. Set shallots and 3/4 cup of red cabbage aside as toppings. When the sweet potatoes are not far off, place a large pan on medium heat and add the remaining 1 cup of cabbage and crushed garlic to saute. Add the beans and cook until lightly coloured then add water, salt, maple syrup and ascorbic acid. Bring to the boil then reduce heat to a simmer and let the water reduce down. Taste and adjust.</p>
+                        <p>At this stage, the sweet potatoes should be cooked, remove from the oven and either keep in the tray (be careful as it will be hot) and add other ingredients on top or move to a different serving plate. Any leftover cashew cream can be served in a bowl alongside the loaded fries for additional topping. Top the sweet potato with the bean mixture, cabbage, cashew cream and shallots. Serve alongside the baby cos lettuce cups as this can be used to scoop the mixture inside and top with some addition cashew cream.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 

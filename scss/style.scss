@@ -48,11 +48,11 @@ h2, h4, h5, h6{
 
 p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
 }
 
 
 
+/*------------------------------MOBILE------------------------------*/
 
 /*--------------------FOOTER--------------------*/
 
@@ -89,6 +89,9 @@ main{
     background-color: $color_celeste;
 }
 
+.index__Videos{
+    background-color: $color_lila;
+}
 
 
 
@@ -110,6 +113,14 @@ main{
 .food__recipes{
     background-color: $color_rosa;
 }
+
+.modal__color{
+    background-color: $color_plateado;
+}
+
+
+
+
 
 .food__carousel{
     background-color: $color_celeste;
@@ -141,7 +152,7 @@ main{
     background-color: $color_celeste;
 }
 
-.exercise__size{
+.videos__size{
     width: 24rem;
     height: 15rem;
 }
@@ -159,6 +170,28 @@ main{
      h2{
          font-size: ($font__size-mobile/1.2)/2;
      }
+}
+
+/*---------------SECTIONS---------------*/
+
+.medication__treat{
+    background-color: $color_celeste;
+}
+
+.medication__selfcare{
+    background-image: url(/img/selfcarebg.jpg);
+    h3{
+        color: rgb(214, 211, 211);
+    }
+    div{
+        background-color: #ffffff10;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        font-weight: bold;
+    }
+    p{
+        color: rgb(214, 211, 211);
+    }
 }
 
 
@@ -193,3 +226,14 @@ main{
         padding: 0.5rem;
     }
 }
+
+/*---------------FORM---------------*/
+
+.form__color{
+    background-color: $color_lila;
+}
+
+/*------------------------------TABLET------------------------------*/
+
+
+/*------------------------------DESKTOP------------------------------*/

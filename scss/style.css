@@ -34,9 +34,9 @@ h2, h4, h5, h6 {
 
 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
 }
 
+/*------------------------------MOBILE------------------------------*/
 /*--------------------FOOTER--------------------*/
 footer {
   background-color: #828a95;
@@ -65,6 +65,10 @@ main {
   background-color: #CEEAF7;
 }
 
+.index__Videos {
+  background-color: #D5C9DF;
+}
+
 /*--------------------FOOD&DIET--------------------*/
 /*---------------MAIN---------------*/
 .food__main h1 {
@@ -77,6 +81,10 @@ main {
 
 .food__recipes {
   background-color: #DCB8CB;
+}
+
+.modal__color {
+  background-color: #828a95;
 }
 
 .food__carousel {
@@ -102,7 +110,7 @@ main {
   background-color: #CEEAF7;
 }
 
-.exercise__size {
+.videos__size {
   width: 24rem;
   height: 15rem;
 }
@@ -115,6 +123,30 @@ main {
 
 .medication__main h2 {
   font-size: 2.08333rem;
+}
+
+/*---------------SECTIONS---------------*/
+.medication__treat {
+  background-color: #CEEAF7;
+}
+
+.medication__selfcare {
+  background-image: url(/img/selfcarebg.jpg);
+}
+
+.medication__selfcare h3 {
+  color: #d6d3d3;
+}
+
+.medication__selfcare div {
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-weight: bold;
+}
+
+.medication__selfcare p {
+  color: #d6d3d3;
 }
 
 /*--------------------ABOUT--------------------*/
@@ -142,4 +174,12 @@ main {
   color: black;
   padding: 0.5rem;
 }
+
+/*---------------FORM---------------*/
+.form__color {
+  background-color: #D5C9DF;
+}
+
+/*------------------------------TABLET------------------------------*/
+/*------------------------------DESKTOP------------------------------*/
 /*# sourceMappingURL=style.css.map */
