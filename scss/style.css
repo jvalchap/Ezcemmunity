@@ -3,6 +3,18 @@
   margin: 0rem;
 }
 
+h1, h3, div {
+  font-family: 'Merriweather', serif;
+}
+
+h2, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,17 +35,15 @@ button {
   font-size: 1.1rem;
 }
 
-/*--------------------FONT--------------------*/
-h1, h3, div {
-  font-family: 'Merriweather', serif;
+#flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-h2, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-p {
-  font-family: 'Montserrat', sans-serif;
+#grid {
+  display: -ms-grid;
+  display: grid;
 }
 
 /*------------------------------MOBILE------------------------------*/
@@ -79,7 +89,8 @@ main {
   font-size: 1.92308rem;
 }
 
-.food__recipes {
+/*---------------SECTIONS---------------*/
+.food__recipes-mobile {
   background-color: #DCB8CB;
 }
 
@@ -87,6 +98,7 @@ main {
   background-color: #828a95;
 }
 
+/*---------------CARROUSEL---------------*/
 .food__carousel {
   background-color: #CEEAF7;
 }
@@ -180,6 +192,189 @@ main {
   background-color: #D5C9DF;
 }
 
+.form_img {
+  display: none;
+}
+
 /*------------------------------TABLET------------------------------*/
+@media (min-width: 426px) {
+  /*--------------------FONT--------------------*/
+  div, p {
+    font-size: 1.7rem;
+  }
+  /*--------------------FOOTER--------------------*/
+  footer {
+    background-color: #828a95;
+  }
+  footer p {
+    color: #3a3939;
+    font-size: 1.2rem;
+  }
+  /*--------------------INDEX--------------------*/
+  /*---------------MAIN---------------*/
+  main {
+    background-color: #ccd7e4;
+  }
+  .index__main {
+    padding: 1rem;
+  }
+  .index__main h1 {
+    font-size: 6rem;
+  }
+  .index__main h2 {
+    font-size: 3.15789rem;
+  }
+  /*---------------SECTIONS---------------*/
+  .phrase {
+    background-color: #CEEAF7;
+  }
+  .index__Videos {
+    background-color: #D5C9DF;
+  }
+  /*--------------------FOOD&DIET--------------------*/
+  /*---------------MAIN---------------*/
+  .food__main {
+    padding: 1rem;
+  }
+  .food__main h1 {
+    font-size: 6rem;
+  }
+  .food__main h2 {
+    font-size: 3rem;
+  }
+  /*---------------SECTIONS---------------*/
+  .food__description {
+    padding: 1rem;
+  }
+  .food__recipes-mobile {
+    background-color: #DCB8CB;
+  }
+  .modal__color {
+    background-color: #828a95;
+  }
+  /*---------------CAROUSEL---------------*/
+  .food__carousel {
+    background-color: #CEEAF7;
+  }
+  .food__carousel p {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  /*--------------------EXERCISE--------------------*/
+  /*---------------MAIN---------------*/
+  .exercise__main {
+    padding: 1rem;
+  }
+  .exercise__main h1 {
+    font-size: 4rem;
+  }
+  .exercise__main h2 {
+    font-size: 4rem;
+  }
+  /*---------------SECTIONS---------------*/
+  h3 {
+    font-size: 3.33333rem;
+  }
+  .videos__size {
+    width: 46rem;
+    height: 30rem;
+  }
+  /*--------------------ABOUT--------------------*/
+  /*---------------MAIN---------------*/
+  .about__main {
+    padding: 1rem;
+  }
+  .about__main h1 {
+    font-size: 6rem;
+  }
+  .about__main h2 {
+    font-size: 3rem;
+  }
+  /*---------------SECTION---------------*/
+  .about__description {
+    background-image: url(/img/about__banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /*---------------FORM---------------*/
+  .form_img {
+    display: none;
+  }
+}
+
 /*------------------------------DESKTOP------------------------------*/
+@media (min-width: 1024px) {
+  /*---------------FOOTER---------------*/
+  .footer__color-tw:hover {
+    -webkit-box-shadow: 0 0 30px #30e5fd;
+            box-shadow: 0 0 30px #30e5fd;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+  }
+  .footer__color-i:hover {
+    -webkit-box-shadow: 0 0 30px #fd1cf2;
+            box-shadow: 0 0 30px #fd1cf2;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+  }
+  .footer__color-fb:hover {
+    -webkit-box-shadow: 0 0 30px #1609c9;
+            box-shadow: 0 0 30px #1609c9;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+  }
+  /*--------------------MEDICATION--------------------*/
+  /*---------------MAIN---------------*/
+  .medication__main {
+    padding: 1rem;
+  }
+  .medication__main h1 {
+    font-size: 6rem;
+  }
+  .medication__main h2 {
+    font-size: 4rem;
+  }
+  /*---------------SECTIONS---------------*/
+  .medication__selfcare {
+    background-image: url(/img/selfcarebg.jpg);
+  }
+  .medication__selfcare h3 {
+    color: #d6d3d3;
+  }
+  .medication__selfcare div {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    font-weight: bold;
+  }
+  .medication__selfcare p {
+    color: #d6d3d3;
+  }
+  /*--------------------ABOUT--------------------*/
+  /*---------------MAIN---------------*/
+  .about__main {
+    padding: 1rem;
+  }
+  .about__main h1 {
+    font-size: 6rem;
+  }
+  .about__main h2 {
+    font-size: 3rem;
+  }
+  /*---------------SECTION---------------*/
+  .about__description {
+    background-image: url(/img/about__banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /*---------------BUTTONS---------------*/
+  .button_animation:hover {
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black;
+    font-weight: bold;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+}
 /*# sourceMappingURL=style.css.map */

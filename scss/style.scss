@@ -1,16 +1,30 @@
 $font__size-mobile: 5rem;
 $font__text-mobile: 1.1rem;
+$font__size-tablet: 6rem;
+$font__text-tablet: 1.7rem;
 $color_rosa: #DCB8CB;
 $color_lila: #D5C9DF;
 $color_plateado: #828a95;
 $color_gris: #ccd7e4;
 $color_celeste: #CEEAF7;
 
-
 *{
     padding: 0rem;
     margin: 0rem;
 }
+
+h1, h3, div{
+    font-family: 'Merriweather', serif;
+}
+
+h2, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 html{
     scroll-behavior: smooth;
@@ -34,23 +48,13 @@ button{
     }
 }
 
-
-
-/*--------------------FONT--------------------*/
-
-h1, h3, div{
-    font-family: 'Merriweather', serif;
+#flex{
+    display: flex;
 }
 
-h2, h4, h5, h6{
-    font-family: 'Montserrat', sans-serif;
+#grid{
+    display: grid;
 }
-
-p{
-    font-family: 'Montserrat', sans-serif;
-}
-
-
 
 /*------------------------------MOBILE------------------------------*/
 
@@ -62,9 +66,6 @@ footer{
     }
     background-color: $color_plateado;
 }
-
-
-
 
 /*--------------------INDEX--------------------*/
 
@@ -110,17 +111,18 @@ main{
     }
 }
 
-.food__recipes{
+/*---------------SECTIONS---------------*/
+
+.food__recipes-mobile{
     background-color: $color_rosa;
 }
+
 
 .modal__color{
     background-color: $color_plateado;
 }
 
-
-
-
+/*---------------CARROUSEL---------------*/
 
 .food__carousel{
     background-color: $color_celeste;
@@ -173,6 +175,7 @@ main{
 }
 
 /*---------------SECTIONS---------------*/
+
 
 .medication__treat{
     background-color: $color_celeste;
@@ -233,7 +236,309 @@ main{
     background-color: $color_lila;
 }
 
+.form_img{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------TABLET------------------------------*/
 
 
+@media(min-width: 426px){
+
+/*--------------------FONT--------------------*/
+    div, p{
+        font-size: $font__text-tablet;
+    }
+
+
+/*--------------------FOOTER--------------------*/
+    footer{
+        p{
+            color: rgb(58, 57, 57);
+            font-size: 1.2rem;
+        }
+        background-color: $color_plateado;
+    }
+
+
+/*--------------------INDEX--------------------*/
+
+/*---------------MAIN---------------*/
+
+    main{
+        background-color: $color_gris;
+    }
+
+    .index__main{
+        h1{
+            font-size: $font__size-tablet;
+        }
+        h2{
+            font-size: $font__size-tablet/1.9;
+        }
+        padding: 1rem;
+    }
+
+/*---------------SECTIONS---------------*/
+
+    .phrase{
+        background-color: $color_celeste;
+    }
+
+    .index__Videos{
+        background-color: $color_lila;
+    }
+
+
+
+
+
+
+/*--------------------FOOD&DIET--------------------*/
+
+/*---------------MAIN---------------*/
+
+    .food__main{
+        h1{
+            font-size: $font__size-tablet; 
+        }
+        h2{
+            font-size: $font__size-tablet/2;
+        }
+        padding: 1rem;
+    }
+
+/*---------------SECTIONS---------------*/
+
+    .food__description{
+        padding: 1rem;
+    }
+
+    .food__recipes-mobile{
+        background-color: $color_rosa;
+    }
+
+    .modal__color{
+        background-color: $color_plateado;
+    }
+
+
+/*---------------CAROUSEL---------------*/
+
+    .food__carousel{
+        background-color: $color_celeste;
+        p{
+            background-color: #ffffff10;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    }
+
+
+
+
+/*--------------------EXERCISE--------------------*/
+
+/*---------------MAIN---------------*/
+
+    .exercise__main{
+        h1{
+            font-size: $font__size-tablet/1.5; 
+        }
+        h2{
+            font-size: $font__size-tablet/1.5;
+        }
+        padding: 1rem;
+    }
+
+
+/*---------------SECTIONS---------------*/
+
+    h3{
+        font-size: $font__size-tablet/1.8 
+    }
+
+    .videos__size{
+        width: 46rem;
+        height: 30rem;
+    }    
+
+
+
+
+
+
+
+
+
+/*--------------------ABOUT--------------------*/
+
+/*---------------MAIN---------------*/
+
+    .about__main{
+        h1{
+        font-size: $font__size-tablet; 
+        }
+        h2{
+            font-size: $font__size-tablet/2;
+        }
+        padding: 1rem;
+    }
+
+
+/*---------------SECTION---------------*/
+
+    .about__description{
+        background-image: url(/img/about__banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+/*---------------FORM---------------*/
+
+    .form_img{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------DESKTOP------------------------------*/
+
+@media(min-width: 1024px){
+
+
+
+/*---------------FOOTER---------------*/
+
+.footer__color-tw:hover{
+    box-shadow: 0 0 30px rgb(48, 229, 253);
+    transition: ease-in-out;
+}
+
+.footer__color-i:hover{
+    box-shadow: 0 0 30px rgb(253, 28, 242);
+    transition: ease-in-out;
+}
+
+.footer__color-fb:hover{
+    box-shadow: 0 0 30px rgb(22, 9, 201);
+    transition: ease-in-out;
+}
+
+
+
+/*--------------------MEDICATION--------------------*/
+
+/*---------------MAIN---------------*/
+
+    .medication__main{
+        h1{
+            font-size: $font__size-tablet; 
+        }
+        h2{
+            font-size: $font__size-tablet/1.5;
+        }
+        padding: 1rem;
+    }
+
+/*---------------SECTIONS---------------*/
+
+
+    .medication__selfcare{
+        background-image: url(/img/selfcarebg.jpg);
+        h3{
+            color: rgb(214, 211, 211);
+        }
+        div{
+            background-color: #ffffff10;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            font-weight: bold;
+        }
+        p{
+            color: rgb(214, 211, 211);
+        }
+    }
+
+
+
+
+/*--------------------ABOUT--------------------*/
+
+/*---------------MAIN---------------*/
+
+    .about__main{
+        h1{
+        font-size: $font__size-tablet; 
+        }
+        h2{
+            font-size: $font__size-tablet/2;
+        }
+        padding: 1rem;
+    }
+
+
+/*---------------SECTION---------------*/
+
+    .about__description{
+        background-image: url(/img/about__banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+/*---------------BUTTONS---------------*/
+
+.button_animation:hover{
+    box-shadow: 0 0 10px black;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+
+
+
+}
