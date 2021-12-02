@@ -21,7 +21,7 @@
     <div>
 
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-mobile">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,19 @@
             </nav>
         </header>
 
-        <main class="ps-3 pe-3 d-flex flex-column align-items-start exercise__main">
+        <header>
+            <nav class="navbar-desktop">
+                <ul class="navbar-desktop__options">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="food.html">Food&Diets</a></li>
+                    <li> <a href="exercise.html">Exercise</a></li>
+                    <li> <a href="medication.html">Medication</a></li>
+                    <li> <a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="exercise__main ps-3 pe-3">
             <div>
                 <h1 class="p-1">Exercises and LifeStyle</h1>
             </div>
@@ -67,14 +79,18 @@
         <section class="exercise__pilates p-1">
             <div class="p-2">
                 <h3>Pilates</h3>
-                <div>Low Impact Full Pilates</div>
+                <div class="pilates__flex-titulos">
+                    <div>Low Impact Full Pilates</div>
+                    <div>Beginners Pilates No Equipment</div>
+                <div>
+            <div class="pilates__flex">
                 <div class="p-1">
-                    <iframe class="videos__size" src="https://www.youtube.com/embed/MDDuE_vdVFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div>Beginners Pilates No Equipment</div>
+                    <iframe src="https://www.youtube.com/embed/MDDuE_vdVFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>                    
                 <div class="p-1">
-                    <iframe class="videos__size" src="https://www.youtube.com/embed/NyP_waVgL1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/NyP_waVgL1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
+            </div>
             </div>
         </section>
 

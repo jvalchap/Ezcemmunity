@@ -22,7 +22,7 @@
     <div>
     
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-mobile">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,19 @@
             </nav>
         </header>
 
-        <main class="about__main ps-3 pe-3 d-flex flex-column align-items-start">
+        <header>
+            <nav class="navbar-desktop">
+                <ul class="navbar-desktop__options">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="food.html">Food&Diets</a></li>
+                    <li> <a href="exercise.html">Exercise</a></li>
+                    <li> <a href="medication.html">Medication</a></li>
+                    <li> <a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="about__main ps-3 pe-3">
             <div>
                 <h1 class="p-2">About us</h1>
             </div>
@@ -71,27 +83,29 @@
                 <h3>Our form</h3>
                 <p>Fill out this form for any questions, experiences and ideas you may have for this site and other fellow Eczema pals!</p>
             </div>
-            <div class="ps-3 pe-3 pt-2" >
-                <form action="">
-                    <div class="mb-3">
-                        <label class="form-label">Name</label>
-                        <input type="name" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Email address</label>
-                        <input type="email" class="form-control" placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Description</label>
-                        <textarea class="form-control" rows="3" placeholder="Let us know your thoughts!"></textarea>
-                    </div>
-                    <div class="d-grid d-flex justify-content-end">
-                        <button type="submit" class="button_animation btn btn-dark mb-3">Submit</button>
-                    </div>
-                </form>
-            </div>
-            <div class="form_img">
-                <img src="/img/form_section_img.jpg" alt="">
+            <div class="form__flex">
+                <div class="ps-3 pe-3 pt-2" >
+                    <form action="">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="name" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email address</label>
+                            <input type="email" class="form-control" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control" rows="3" placeholder="Let us know your thoughts!"></textarea>
+                        </div>
+                        <div class="d-grid d-flex justify-content-end">
+                            <button type="submit" class="button_animation btn btn-dark mb-3">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <img class="form__img" src="/img/form_section_img.jpg" alt="">
+                </div>
             </div>
         </section>
 

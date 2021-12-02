@@ -21,6 +21,7 @@ html {
 
 ul {
   list-style: none;
+  margin: 0rem;
 }
 
 a {
@@ -81,6 +82,16 @@ main {
 
 /*--------------------FOOD&DIET--------------------*/
 /*---------------MAIN---------------*/
+.food__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .food__main h1 {
   font-size: 3.125rem;
 }
@@ -90,8 +101,12 @@ main {
 }
 
 /*---------------SECTIONS---------------*/
-.food__recipes-mobile {
+.food__recipes {
   background-color: #DCB8CB;
+}
+
+.food__recipes card {
+  width: 24rem;
 }
 
 .modal__color {
@@ -105,6 +120,22 @@ main {
 
 /*--------------------EXERCISE--------------------*/
 /*---------------MAIN---------------*/
+.exercise__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .exercise__main h1 {
   font-size: 3.57143rem;
 }
@@ -129,6 +160,22 @@ main {
 
 /*--------------------MEDICATION--------------------*/
 /*---------------MAIN---------------*/
+.medication__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .medication__main h1 {
   font-size: 4.16667rem;
 }
@@ -140,6 +187,16 @@ main {
 /*---------------SECTIONS---------------*/
 .medication__treat {
   background-color: #CEEAF7;
+}
+
+.medication__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .medication__selfcare {
@@ -163,6 +220,22 @@ main {
 
 /*--------------------ABOUT--------------------*/
 /*---------------MAIN---------------*/
+.about__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .about__main h1 {
   font-size: 5rem;
 }
@@ -192,8 +265,18 @@ main {
   background-color: #D5C9DF;
 }
 
-.form_img {
-  display: none;
+.form__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__flex img {
+  width: 100%;
 }
 
 /*------------------------------TABLET------------------------------*/
@@ -246,11 +329,26 @@ main {
   .food__description {
     padding: 1rem;
   }
-  .food__recipes-mobile {
-    background-color: #DCB8CB;
+  .food__recipes-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
-  .modal__color {
-    background-color: #828a95;
+  .food__recipes div, .food__recipes p {
+    font-size: 1.13333rem;
+  }
+  #modalFirstRecipe div, #modalFirstRecipe p {
+    font-size: 1.13333rem;
+  }
+  #modalSecondRecipe div, #modalSecondRecipe p {
+    font-size: 1.13333rem;
   }
   /*---------------CAROUSEL---------------*/
   .food__carousel {
@@ -280,50 +378,6 @@ main {
     width: 46rem;
     height: 30rem;
   }
-  /*--------------------ABOUT--------------------*/
-  /*---------------MAIN---------------*/
-  .about__main {
-    padding: 1rem;
-  }
-  .about__main h1 {
-    font-size: 6rem;
-  }
-  .about__main h2 {
-    font-size: 3rem;
-  }
-  /*---------------SECTION---------------*/
-  .about__description {
-    background-image: url(/img/about__banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  /*---------------FORM---------------*/
-  .form_img {
-    display: none;
-  }
-}
-
-/*------------------------------DESKTOP------------------------------*/
-@media (min-width: 1024px) {
-  /*---------------FOOTER---------------*/
-  .footer__color-tw:hover {
-    -webkit-box-shadow: 0 0 30px #30e5fd;
-            box-shadow: 0 0 30px #30e5fd;
-    -webkit-transition: ease-in-out;
-    transition: ease-in-out;
-  }
-  .footer__color-i:hover {
-    -webkit-box-shadow: 0 0 30px #fd1cf2;
-            box-shadow: 0 0 30px #fd1cf2;
-    -webkit-transition: ease-in-out;
-    transition: ease-in-out;
-  }
-  .footer__color-fb:hover {
-    -webkit-box-shadow: 0 0 30px #1609c9;
-            box-shadow: 0 0 30px #1609c9;
-    -webkit-transition: ease-in-out;
-    transition: ease-in-out;
-  }
   /*--------------------MEDICATION--------------------*/
   /*---------------MAIN---------------*/
   .medication__main {
@@ -336,6 +390,22 @@ main {
     font-size: 4rem;
   }
   /*---------------SECTIONS---------------*/
+  .medication__treat {
+    background-color: #CEEAF7;
+  }
+  .medication__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .medication__flex img {
+    width: 50%;
+    padding: 0.3rem;
+  }
   .medication__selfcare {
     background-image: url(/img/selfcarebg.jpg);
   }
@@ -367,6 +437,216 @@ main {
     background-image: url(/img/about__banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  /*---------------FORM---------------*/
+  .form__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__flex img {
+    width: 100%;
+  }
+}
+
+/*------------------------------DESKTOP------------------------------*/
+@media (min-width: 1024px) {
+  /*---------------FOOTER---------------*/
+  .footer__color-tw:hover {
+    -webkit-box-shadow: 0 0 30px #30e5fd;
+            box-shadow: 0 0 30px #30e5fd;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+  }
+  .footer__color-i:hover {
+    -webkit-box-shadow: 0 0 30px #fd1cf2;
+            box-shadow: 0 0 30px #fd1cf2;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+  }
+  .footer__color-fb:hover {
+    -webkit-box-shadow: 0 0 30px #1609c9;
+            box-shadow: 0 0 30px #1609c9;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+  }
+  /*--------------------INDEX--------------------*/
+  /*---------------MAIN---------------*/
+  .navbar-mobile {
+    display: none;
+  }
+  .navbar-desktop {
+    text-align: right;
+    list-style: none;
+    background-color: white;
+    padding-top: 21.2rem;
+    font-size: 1.5rem;
+    background-image: url(/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .navbar-desktop__options li {
+    display: inline-block;
+    padding: 2rem;
+    text-decoration: none;
+  }
+  .navbar-desktop__options a {
+    text-decoration: none;
+    color: black;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 1rem;
+  }
+  /*--------------------EXERCISE--------------------*/
+  /*---------------MAIN---------------*/
+  .exercise__main {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .exercise__main h1 {
+    font-size: 4rem;
+  }
+  .exercise__main h2 {
+    font-size: 3.33333rem;
+  }
+  /*---------------SECTIONS---------------*/
+  .exercise__description {
+    padding: 1rem;
+  }
+  h3 {
+    font-size: 3.33333rem;
+  }
+  .pilates__flex-titulos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .pilates__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pilates__flex iframe {
+    width: 200%;
+  }
+  .videos__size {
+    width: 46rem;
+    height: 30rem;
+  }
+  /*--------------------MEDICATION--------------------*/
+  /*---------------MAIN---------------*/
+  .medication__main {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .medication__main h1 {
+    font-size: 6rem;
+  }
+  .medication__main h2 {
+    font-size: 4rem;
+  }
+  /*---------------SECTIONS---------------*/
+  .medication__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .medication__flex img {
+    width: 30%;
+    padding: 0.5rem;
+  }
+  .medication__selfcare {
+    background-image: url(/img/selfcarebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .medication__selfcare h3 {
+    color: #d6d3d3;
+  }
+  .medication__selfcare div {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    font-weight: bold;
+  }
+  .medication__selfcare p {
+    color: #d6d3d3;
+  }
+  /*--------------------ABOUT--------------------*/
+  /*---------------MAIN---------------*/
+  .about__main {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about__main h1 {
+    font-size: 6rem;
+  }
+  .about__main h2 {
+    font-size: 3rem;
+  }
+  /*---------------SECTION---------------*/
+  .about__description {
+    background-image: url(/img/about__banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /*---------------FORM---------------*/
+  .form__flex img {
+    display: none;
   }
   /*---------------BUTTONS---------------*/
   .button_animation:hover {

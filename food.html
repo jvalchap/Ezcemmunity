@@ -21,7 +21,7 @@
     <div>
 
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-mobile">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,9 +47,21 @@
             </nav>
         </header>
 
+        <header>
+            <nav class="navbar-desktop">
+                <ul class="navbar-desktop__options">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="food.html">Food&Diets</a></li>
+                    <li> <a href="exercise.html">Exercise</a></li>
+                    <li> <a href="medication.html">Medication</a></li>
+                    <li> <a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
 
 
-        <main class="ps-3 pe-3 d-flex flex-column align-items-start food__main">
+
+        <main class="food__main ps-3 pe-3">
             <div>
                 <h1 class="p-1">Food and Diets</h1>
             </div>
@@ -68,30 +80,30 @@
         </section>
 
 
-        <section class="food__recipes-mobile">
-            <div>
-                <div class="ps-3 pe-3 pt-2"><h3>Quick and easy recipes</h3></div>
-                <div class="p-3">
-                    <div class="card" style="width: 24rem;">
-                        <img src="img/potatoes.jpeg" class="card-img-top" alt="Roasted potatoes photo">
-                        <div class="card-body">
-                        <h5 class="card-title fw-bold">Roasted Potatoes with Chickpeas and Leeks</h5>
-                        <p class="card-text">Perfect as a side dish or main meal, this roasted potato dish is simple, tasty and boasting with eczema friendly ingredients.</p>
-                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalFirstRecipe">Full Recipe</button>
+        <section class="food__recipes">
+            <div class="ps-3 pe-3 pt-2"><h3>Quick and easy recipes</h3></div>
+                <div class="food__recipes-flex">
+                    <div class="p-3">
+                        <div class="card">
+                            <img src="img/potatoes.jpeg" class="card-img-top" alt="Roasted potatoes photo">
+                            <div class="card-body">
+                            <h5 class="card-title fw-bold">Roasted Potatoes with Chickpeas and Leeks</h5>
+                            <p class="card-text">Perfect as a side dish or main meal, this roasted potato dish is simple, tasty and boasting with eczema friendly ingredients.</p>
+                            <button type="button" class="btn btn-dark button_animation" data-bs-toggle="modal" data-bs-target="#modalFirstRecipe">Full Recipe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <div class="card">
+                            <img src="img/sweetpotatoes.jpeg" class="card-img-top" alt="Sweet Potatoes Salad Photo">
+                            <div class="card-body">
+                            <h5 class="card-title fw-bold">Loaded Sweet Potato Fries</h5>
+                            <p class="card-text">This dish will be loved by all the family for an easy weeknight meal and perfect for lunch the following day.</p>
+                            <button type="button" class="btn btn-dark button_animation" data-bs-toggle="modal" data-bs-target="#modalSecondRecipe">Full Recipe</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="p-3">
-                    <div class="card" style="width: 24rem;">
-                        <img src="img/sweetpotatoes.jpeg" class="card-img-top" alt="Sweet Potatoes Salad Photo">
-                        <div class="card-body">
-                        <h5 class="card-title fw-bold">Loaded Sweet Potato Fries</h5>
-                        <p class="card-text">This dish will be loved by all the family for an easy weeknight meal and perfect for lunch the following day.</p>
-                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalSecondRecipe">Full Recipe</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
                 <!-- Modal for the first Recipe-->

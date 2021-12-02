@@ -25,13 +25,13 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
-
 html{
     scroll-behavior: smooth;
 }
 
 ul{
     list-style: none;
+    margin: 0rem;
 }
 
 a{
@@ -55,6 +55,9 @@ button{
 #grid{
     display: grid;
 }
+
+
+
 
 /*------------------------------MOBILE------------------------------*/
 
@@ -109,12 +112,17 @@ main{
     h2{
         font-size: $font__size-mobile/2.6;
     }
+    display: flex;
+    flex-direction: column;
 }
 
 /*---------------SECTIONS---------------*/
 
-.food__recipes-mobile{
+.food__recipes{
     background-color: $color_rosa;
+    card{
+        width: 24rem;
+    }
 }
 
 
@@ -129,6 +137,8 @@ main{
 }
 
 
+
+
 /*--------------------EXERCISE--------------------*/
 
 /*---------------MAIN---------------*/
@@ -140,6 +150,10 @@ main{
     h2{
         font-size: $font__size-mobile/2.6;
     }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
 }
 
 
@@ -161,6 +175,8 @@ main{
 
 
 
+
+
 /*--------------------MEDICATION--------------------*/
 
 /*---------------MAIN---------------*/
@@ -168,10 +184,14 @@ main{
 .medication__main{
     h1{
         font-size: $font__size-mobile/1.2; 
-     }
+    }
      h2{
          font-size: ($font__size-mobile/1.2)/2;
-     }
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
 }
 
 /*---------------SECTIONS---------------*/
@@ -179,6 +199,11 @@ main{
 
 .medication__treat{
     background-color: $color_celeste;
+}
+
+.medication__flex{
+    display: flex;
+    flex-direction: column;
 }
 
 .medication__selfcare{
@@ -211,6 +236,10 @@ main{
     h2{
         font-size: $font__size-mobile/2;
     }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
 }
 
 
@@ -236,8 +265,12 @@ main{
     background-color: $color_lila;
 }
 
-.form_img{
-    display: none;
+.form__flex{
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 100%;
+    }
 }
 
 
@@ -331,13 +364,30 @@ main{
         padding: 1rem;
     }
 
-    .food__recipes-mobile{
-        background-color: $color_rosa;
+    .food__recipes-flex{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
     }
 
-    .modal__color{
-        background-color: $color_plateado;
+    .food__recipes{
+        div, p{
+            font-size: $font__text-tablet/1.5;
+        }
     }
+
+    #modalFirstRecipe{
+        div, p{
+            font-size: $font__text-tablet/1.5;
+        }
+    }
+
+    #modalSecondRecipe{
+        div, p{
+            font-size: $font__text-tablet/1.5;
+        }
+    }
+
 
 
 /*---------------CAROUSEL---------------*/
@@ -381,8 +431,51 @@ main{
     }    
 
 
+/*--------------------MEDICATION--------------------*/
+
+/*---------------MAIN---------------*/
+
+    .medication__main{
+        h1{
+            font-size: $font__size-tablet; 
+        }
+        h2{
+            font-size: $font__size-tablet/1.5;
+        }
+        padding: 1rem;
+    }
+
+/*---------------SECTIONS---------------*/
 
 
+    .medication__treat{
+        background-color: $color_celeste;
+    }
+
+    .medication__flex{
+        display: flex;
+        flex-direction: row;
+        img{
+            width: 50%;
+            padding: 0.3rem;
+        }
+    }
+
+    .medication__selfcare{
+        background-image: url(/img/selfcarebg.jpg);
+        h3{
+            color: rgb(214, 211, 211);
+        }
+        div{
+            background-color: #ffffff10;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            font-weight: bold;
+        }
+        p{
+            color: rgb(214, 211, 211);
+        }
+    }
 
 
 
@@ -413,9 +506,15 @@ main{
 
 /*---------------FORM---------------*/
 
-    .form_img{
-        display: none;
+    .form__flex{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
     }
+
+
 
 }
 
@@ -453,20 +552,113 @@ main{
 
 /*---------------FOOTER---------------*/
 
-.footer__color-tw:hover{
-    box-shadow: 0 0 30px rgb(48, 229, 253);
-    transition: ease-in-out;
-}
+    .footer__color-tw:hover{
+        box-shadow: 0 0 30px rgb(48, 229, 253);
+        transition: ease-in-out;
+    }
 
-.footer__color-i:hover{
-    box-shadow: 0 0 30px rgb(253, 28, 242);
-    transition: ease-in-out;
-}
+    .footer__color-i:hover{
+        box-shadow: 0 0 30px rgb(253, 28, 242);
+        transition: ease-in-out;
+    }
 
-.footer__color-fb:hover{
-    box-shadow: 0 0 30px rgb(22, 9, 201);
-    transition: ease-in-out;
-}
+    .footer__color-fb:hover{
+        box-shadow: 0 0 30px rgb(22, 9, 201);
+        transition: ease-in-out;
+    }
+
+
+
+/*--------------------INDEX--------------------*/
+
+/*---------------MAIN---------------*/
+
+    .navbar-mobile{
+        display: none;
+    }
+
+    .navbar-desktop{
+        text-align: right;
+        list-style: none;
+        background-color: rgb(255, 255, 255);
+        padding-top: 21.2rem;
+        font-size: 1.5rem;
+        background-image: url(/img/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navbar-desktop__options{ 
+        li{
+            display: inline-block;
+            padding: 2rem;
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            background-color: #ffffff10;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 1rem;
+        }
+    }
+
+
+
+
+
+
+
+/*--------------------EXERCISE--------------------*/
+
+/*---------------MAIN---------------*/
+
+    .exercise__main{
+        h1{
+            font-size: $font__size-tablet/1.5; 
+        }
+        h2{
+            font-size: $font__size-tablet/1.8;
+        }
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+/*---------------SECTIONS---------------*/
+
+    .exercise__description{
+        padding: 1rem;
+    }
+
+    h3{
+        font-size: $font__size-tablet/1.8 
+    }
+
+    .pilates__flex-titulos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .pilates__flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        iframe{
+            width: 200%;
+        }
+    }
+    .videos__size{
+        width: 46rem;
+        height: 30rem;
+    }    
+
 
 
 
@@ -482,13 +674,28 @@ main{
             font-size: $font__size-tablet/1.5;
         }
         padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
 /*---------------SECTIONS---------------*/
 
+    .medication__flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        img{
+            width: 30%;
+            padding: 0.5rem;
+        }
+    }
+
 
     .medication__selfcare{
         background-image: url(/img/selfcarebg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         h3{
             color: rgb(214, 211, 211);
         }
@@ -506,6 +713,7 @@ main{
 
 
 
+
 /*--------------------ABOUT--------------------*/
 
 /*---------------MAIN---------------*/
@@ -518,6 +726,10 @@ main{
             font-size: $font__size-tablet/2;
         }
         padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
     }
 
 
@@ -528,6 +740,20 @@ main{
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+/*---------------FORM---------------*/
+
+    .form__flex{
+        img{
+            display: none;
+        }
+    }
+
+
+
+
+
+
 
 
 /*---------------BUTTONS---------------*/
