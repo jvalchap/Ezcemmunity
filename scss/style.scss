@@ -8,67 +8,21 @@ $color_plateado: #828a95;
 $color_gris: #ccd7e4;
 $color_celeste: #CEEAF7;
 
+@import "footer";
+@import "font";
+@import "general";
+
+@media only screen and (max-width: 426px){
+
 *{
     padding: 0rem;
     margin: 0rem;
 }
 
-h1, h3, div{
-    font-family: 'Merriweather', serif;
-}
-
-h2, h4, h5, h6{
-    font-family: 'Montserrat', sans-serif;
-}
-
-p{
-    font-family: 'Montserrat', sans-serif;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-ul{
-    list-style: none;
-    margin: 0rem;
-}
-
-a{
-    text-decoration: none;
-}
-
-button{
-    cursor: pointer;
-}
-
-#redirect_form{
-    p{
-        font-size: $font__text-mobile;
-    }
-}
-
-#flex{
-    display: flex;
-}
-
-#grid{
-    display: grid;
-}
-
-
 
 
 /*------------------------------MOBILE------------------------------*/
 
-/*--------------------FOOTER--------------------*/
-
-footer{
-    p{
-        color: rgb(58, 57, 57);
-    }
-    background-color: $color_plateado;
-}
 
 /*--------------------INDEX--------------------*/
 
@@ -77,6 +31,11 @@ footer{
 main{
     background-color: $color_gris;
 }
+
+.navbar-desktop{
+    display: none;
+}
+
 
 .index__main{
     h1{
@@ -190,8 +149,8 @@ main{
     }
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /*---------------SECTIONS---------------*/
@@ -247,6 +206,8 @@ main{
 
 .about__description{
     background-image: url(/img/about__banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about__description-div{
@@ -269,15 +230,12 @@ main{
     display: flex;
     flex-direction: column;
     img{
-        width: 100%;
+        display: none;
     }
 }
 
 
-
-
-
-
+}
 
 
 
@@ -293,22 +251,7 @@ main{
 /*------------------------------TABLET------------------------------*/
 
 
-@media(min-width: 426px){
-
-/*--------------------FONT--------------------*/
-    div, p{
-        font-size: $font__text-tablet;
-    }
-
-
-/*--------------------FOOTER--------------------*/
-    footer{
-        p{
-            color: rgb(58, 57, 57);
-            font-size: 1.2rem;
-        }
-        background-color: $color_plateado;
-    }
+@media only screen and (min-width: 426px) and (max-width: 1023px){
 
 
 /*--------------------INDEX--------------------*/
@@ -317,6 +260,10 @@ main{
 
     main{
         background-color: $color_gris;
+    }
+
+    .navbar-desktop{
+        display: none;
     }
 
     .index__main{
@@ -371,9 +318,14 @@ main{
     }
 
     .food__recipes{
+        background-color: $color_rosa;
         div, p{
             font-size: $font__text-tablet/1.5;
         }
+    }
+
+    .modal__color{
+        background-color: $color_plateado;
     }
 
     #modalFirstRecipe{
@@ -425,6 +377,14 @@ main{
         font-size: $font__size-tablet/1.8 
     }
 
+    .exercise__pilates{
+        background-color: $color_lila;
+    }
+    
+    .exercise__yoga{
+        background-color: $color_celeste;
+    }
+
     .videos__size{
         width: 46rem;
         height: 30rem;
@@ -443,6 +403,10 @@ main{
             font-size: $font__size-tablet/1.5;
         }
         padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
 /*---------------SECTIONS---------------*/
@@ -504,13 +468,28 @@ main{
         background-size: cover;
     }
 
+    .about__description-div{
+        background-color: #ffffff10;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        p{
+            color: black;
+            padding: 0.5rem;
+        }
+    }
+
+
 /*---------------FORM---------------*/
+
+    .form__color{
+        background-color: $color_lila;
+    }
 
     .form__flex{
         display: flex;
         flex-direction: column;
         img{
-            width: 100%;
+            display: none;
         }
     }
 
@@ -546,35 +525,15 @@ main{
 
 /*------------------------------DESKTOP------------------------------*/
 
-@media(min-width: 1024px){
-
-
-
-/*---------------FOOTER---------------*/
-
-    .footer__color-tw:hover{
-        box-shadow: 0 0 30px rgb(48, 229, 253);
-        transition: ease-in-out;
-    }
-
-    .footer__color-i:hover{
-        box-shadow: 0 0 30px rgb(253, 28, 242);
-        transition: ease-in-out;
-    }
-
-    .footer__color-fb:hover{
-        box-shadow: 0 0 30px rgb(22, 9, 201);
-        transition: ease-in-out;
-    }
-
+@media only screen and (min-width: 1024px) and (max-width:2561px){
 
 
 /*--------------------INDEX--------------------*/
 
 /*---------------MAIN---------------*/
 
-    .navbar-mobile{
-        display: none;
+    main{
+        background-color: $color_gris;
     }
 
     .navbar-desktop{
@@ -604,8 +563,68 @@ main{
         }
     }
 
+    .navbar-mobile{
+        display: none;
+    }
+
+/*---------------SECTIONS---------------*/
+
+    .phrase{
+        background-color: $color_celeste;
+    }
+
+    .index__Videos{
+        background-color: $color_lila;
+    }
 
 
+
+/*--------------------FOOD&DIET--------------------*/
+
+/*---------------MAIN---------------*/
+
+
+    .food__main{
+        h1{
+            font-size: $font__size-mobile/1.6; 
+        }
+        h2{
+            font-size: $font__size-mobile/2.6;
+        }
+        display: flex;
+        flex-direction: column;
+    }
+
+/*---------------SECTIONS---------------*/
+
+    .food__recipes{
+        background-color: $color_rosa;
+        card{
+            width: 24rem;
+        }
+    }
+
+    .food__recipes-flex{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+
+    .modal__color{
+        background-color: $color_plateado;
+    }
+
+/*---------------CARROUSEL---------------*/
+
+    .food__carousel{
+        background-color: $color_celeste;
+        p{
+            background-color: #ffffff10;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    }
 
 
 
@@ -633,6 +652,14 @@ main{
 
     .exercise__description{
         padding: 1rem;
+    }
+
+    .exercise__pilates{
+        background-color: $color_lila;
+    }
+    
+    .exercise__yoga{
+        background-color: $color_celeste;
     }
 
     h3{
@@ -681,6 +708,10 @@ main{
 
 /*---------------SECTIONS---------------*/
 
+    .medication__treat{
+        background-color: $color_celeste;
+    }
+
     .medication__flex{
         display: flex;
         flex-direction: row;
@@ -707,6 +738,7 @@ main{
         }
         p{
             color: rgb(214, 211, 211);
+            padding: 1rem;
         }
     }
 
@@ -729,7 +761,7 @@ main{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
+        align-items: flex-end;
     }
 
 
@@ -741,11 +773,29 @@ main{
         background-size: cover;
     }
 
+    .about__description-div{
+        background-color: #ffffff10;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        p{
+            color: black;
+            padding: 0.5rem;
+        }
+    }
+
 /*---------------FORM---------------*/
 
+    .form__color{
+        background-color: $color_lila;
+    }
+
     .form__flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         img{
-            display: none;
+            width: 90%;
         }
     }
 

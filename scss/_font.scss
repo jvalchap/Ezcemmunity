@@ -1,0 +1,21 @@
+$font__text-tablet: 1.7rem;
+
+
+    h1, h3, div{
+        font-family: 'Merriweather', serif;
+    }
+    
+    h2, h4, h5, h6{
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    p{
+        font-family: 'Montserrat', sans-serif;
+    }
+
+@media only screen and (min-width: 426px){
+    div, p{
+        font-size: $font__text-tablet;
+    }
+
+}

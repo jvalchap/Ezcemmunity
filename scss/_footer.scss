@@ -1,0 +1,38 @@
+$color_plateado: #828a95;
+
+
+footer{
+    p{
+        color: rgb(58, 57, 57);
+    }
+    background-color: $color_plateado;
+}
+
+
+@media only screen and (min-width: 426px){
+    footer{
+        p{
+            font-size: 1.2rem;
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 1023px){
+
+    .footer__color-tw:hover{
+        box-shadow: 0 0 30px rgb(48, 229, 253);
+        transition: ease-in-out;
+    }
+
+    .footer__color-i:hover{
+        box-shadow: 0 0 30px rgb(253, 28, 242);
+        transition: ease-in-out;
+    }
+
+    .footer__color-fb:hover{
+        box-shadow: 0 0 30px rgb(22, 9, 201);
+        transition: ease-in-out;
+    }
+}

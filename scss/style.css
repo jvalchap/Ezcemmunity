@@ -1,6 +1,36 @@
-* {
-  padding: 0rem;
-  margin: 0rem;
+footer {
+  background-color: #828a95;
+}
+
+footer p {
+  color: #3a3939;
+}
+
+@media only screen and (min-width: 426px) {
+  footer p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .footer__color-tw:hover {
+    -webkit-box-shadow: 0 0 30px #30e5fd;
+            box-shadow: 0 0 30px #30e5fd;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+  }
+  .footer__color-i:hover {
+    -webkit-box-shadow: 0 0 30px #fd1cf2;
+            box-shadow: 0 0 30px #fd1cf2;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+  }
+  .footer__color-fb:hover {
+    -webkit-box-shadow: 0 0 30px #1609c9;
+            box-shadow: 0 0 30px #1609c9;
+    -webkit-transition: ease-in-out;
+    transition: ease-in-out;
+  }
 }
 
 h1, h3, div {
@@ -13,6 +43,12 @@ h2, h4, h5, h6 {
 
 p {
   font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (min-width: 426px) {
+  div, p {
+    font-size: 1.7rem;
+  }
 }
 
 html {
@@ -36,267 +72,213 @@ button {
   font-size: 1.1rem;
 }
 
-#flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#grid {
-  display: -ms-grid;
-  display: grid;
-}
-
-/*------------------------------MOBILE------------------------------*/
-/*--------------------FOOTER--------------------*/
-footer {
-  background-color: #828a95;
-}
-
-footer p {
-  color: #3a3939;
-}
-
-/*--------------------INDEX--------------------*/
-/*---------------MAIN---------------*/
-main {
-  background-color: #ccd7e4;
-}
-
-.index__main h1 {
-  font-size: 3.57143rem;
-}
-
-.index__main h2 {
-  font-size: 1.78571rem;
-}
-
-/*---------------SECTIONS---------------*/
-.phrase {
-  background-color: #CEEAF7;
-}
-
-.index__Videos {
-  background-color: #D5C9DF;
-}
-
-/*--------------------FOOD&DIET--------------------*/
-/*---------------MAIN---------------*/
-.food__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.food__main h1 {
-  font-size: 3.125rem;
-}
-
-.food__main h2 {
-  font-size: 1.92308rem;
-}
-
-/*---------------SECTIONS---------------*/
-.food__recipes {
-  background-color: #DCB8CB;
-}
-
-.food__recipes card {
-  width: 24rem;
-}
-
-.modal__color {
-  background-color: #828a95;
-}
-
-/*---------------CARROUSEL---------------*/
-.food__carousel {
-  background-color: #CEEAF7;
-}
-
-/*--------------------EXERCISE--------------------*/
-/*---------------MAIN---------------*/
-.exercise__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.exercise__main h1 {
-  font-size: 3.57143rem;
-}
-
-.exercise__main h2 {
-  font-size: 1.92308rem;
-}
-
-/*---------------SECTIONS---------------*/
-.exercise__pilates {
-  background-color: #D5C9DF;
-}
-
-.exercise__yoga {
-  background-color: #CEEAF7;
-}
-
-.videos__size {
-  width: 24rem;
-  height: 15rem;
-}
-
-/*--------------------MEDICATION--------------------*/
-/*---------------MAIN---------------*/
-.medication__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.medication__main h1 {
-  font-size: 4.16667rem;
-}
-
-.medication__main h2 {
-  font-size: 2.08333rem;
-}
-
-/*---------------SECTIONS---------------*/
-.medication__treat {
-  background-color: #CEEAF7;
-}
-
-.medication__flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.medication__selfcare {
-  background-image: url(/img/selfcarebg.jpg);
-}
-
-.medication__selfcare h3 {
-  color: #d6d3d3;
-}
-
-.medication__selfcare div {
-  background-color: #ffffff10;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  font-weight: bold;
-}
-
-.medication__selfcare p {
-  color: #d6d3d3;
-}
-
-/*--------------------ABOUT--------------------*/
-/*---------------MAIN---------------*/
-.about__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.about__main h1 {
-  font-size: 5rem;
-}
-
-.about__main h2 {
-  font-size: 2.5rem;
-}
-
-/*---------------SECTION---------------*/
-.about__description {
-  background-image: url(/img/about__banner.jpg);
-}
-
-.about__description-div {
-  background-color: #ffffff10;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-.about__description-div p {
-  color: black;
-  padding: 0.5rem;
-}
-
-/*---------------FORM---------------*/
-.form__color {
-  background-color: #D5C9DF;
-}
-
-.form__flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.form__flex img {
-  width: 100%;
-}
-
-/*------------------------------TABLET------------------------------*/
-@media (min-width: 426px) {
-  /*--------------------FONT--------------------*/
-  div, p {
-    font-size: 1.7rem;
+@media only screen and (max-width: 426px) {
+  * {
+    padding: 0rem;
+    margin: 0rem;
   }
-  /*--------------------FOOTER--------------------*/
-  footer {
-    background-color: #828a95;
-  }
-  footer p {
-    color: #3a3939;
-    font-size: 1.2rem;
-  }
+  /*------------------------------MOBILE------------------------------*/
   /*--------------------INDEX--------------------*/
   /*---------------MAIN---------------*/
   main {
     background-color: #ccd7e4;
+  }
+  .navbar-desktop {
+    display: none;
+  }
+  .index__main h1 {
+    font-size: 3.57143rem;
+  }
+  .index__main h2 {
+    font-size: 1.78571rem;
+  }
+  /*---------------SECTIONS---------------*/
+  .phrase {
+    background-color: #CEEAF7;
+  }
+  .index__Videos {
+    background-color: #D5C9DF;
+  }
+  /*--------------------FOOD&DIET--------------------*/
+  /*---------------MAIN---------------*/
+  .food__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .food__main h1 {
+    font-size: 3.125rem;
+  }
+  .food__main h2 {
+    font-size: 1.92308rem;
+  }
+  /*---------------SECTIONS---------------*/
+  .food__recipes {
+    background-color: #DCB8CB;
+  }
+  .food__recipes card {
+    width: 24rem;
+  }
+  .modal__color {
+    background-color: #828a95;
+  }
+  /*---------------CARROUSEL---------------*/
+  .food__carousel {
+    background-color: #CEEAF7;
+  }
+  /*--------------------EXERCISE--------------------*/
+  /*---------------MAIN---------------*/
+  .exercise__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .exercise__main h1 {
+    font-size: 3.57143rem;
+  }
+  .exercise__main h2 {
+    font-size: 1.92308rem;
+  }
+  /*---------------SECTIONS---------------*/
+  .exercise__pilates {
+    background-color: #D5C9DF;
+  }
+  .exercise__yoga {
+    background-color: #CEEAF7;
+  }
+  .videos__size {
+    width: 24rem;
+    height: 15rem;
+  }
+  /*--------------------MEDICATION--------------------*/
+  /*---------------MAIN---------------*/
+  .medication__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .medication__main h1 {
+    font-size: 4.16667rem;
+  }
+  .medication__main h2 {
+    font-size: 2.08333rem;
+  }
+  /*---------------SECTIONS---------------*/
+  .medication__treat {
+    background-color: #CEEAF7;
+  }
+  .medication__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .medication__selfcare {
+    background-image: url(/img/selfcarebg.jpg);
+  }
+  .medication__selfcare h3 {
+    color: #d6d3d3;
+  }
+  .medication__selfcare div {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    font-weight: bold;
+  }
+  .medication__selfcare p {
+    color: #d6d3d3;
+  }
+  /*--------------------ABOUT--------------------*/
+  /*---------------MAIN---------------*/
+  .about__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__main h1 {
+    font-size: 5rem;
+  }
+  .about__main h2 {
+    font-size: 2.5rem;
+  }
+  /*---------------SECTION---------------*/
+  .about__description {
+    background-image: url(/img/about__banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .about__description-div {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .about__description-div p {
+    color: black;
+    padding: 0.5rem;
+  }
+  /*---------------FORM---------------*/
+  .form__color {
+    background-color: #D5C9DF;
+  }
+  .form__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__flex img {
+    display: none;
+  }
+}
+
+/*------------------------------TABLET------------------------------*/
+@media only screen and (min-width: 426px) and (max-width: 1023px) {
+  /*--------------------INDEX--------------------*/
+  /*---------------MAIN---------------*/
+  main {
+    background-color: #ccd7e4;
+  }
+  .navbar-desktop {
+    display: none;
   }
   .index__main {
     padding: 1rem;
@@ -341,8 +323,14 @@ main {
         -ms-flex-align: stretch;
             align-items: stretch;
   }
+  .food__recipes {
+    background-color: #DCB8CB;
+  }
   .food__recipes div, .food__recipes p {
     font-size: 1.13333rem;
+  }
+  .modal__color {
+    background-color: #828a95;
   }
   #modalFirstRecipe div, #modalFirstRecipe p {
     font-size: 1.13333rem;
@@ -374,6 +362,12 @@ main {
   h3 {
     font-size: 3.33333rem;
   }
+  .exercise__pilates {
+    background-color: #D5C9DF;
+  }
+  .exercise__yoga {
+    background-color: #CEEAF7;
+  }
   .videos__size {
     width: 46rem;
     height: 30rem;
@@ -382,6 +376,18 @@ main {
   /*---------------MAIN---------------*/
   .medication__main {
     padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .medication__main h1 {
     font-size: 6rem;
@@ -438,7 +444,19 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .about__description-div {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .about__description-div p {
+    color: black;
+    padding: 0.5rem;
+  }
   /*---------------FORM---------------*/
+  .form__color {
+    background-color: #D5C9DF;
+  }
   .form__flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -449,35 +467,16 @@ main {
             flex-direction: column;
   }
   .form__flex img {
-    width: 100%;
+    display: none;
   }
 }
 
 /*------------------------------DESKTOP------------------------------*/
-@media (min-width: 1024px) {
-  /*---------------FOOTER---------------*/
-  .footer__color-tw:hover {
-    -webkit-box-shadow: 0 0 30px #30e5fd;
-            box-shadow: 0 0 30px #30e5fd;
-    -webkit-transition: ease-in-out;
-    transition: ease-in-out;
-  }
-  .footer__color-i:hover {
-    -webkit-box-shadow: 0 0 30px #fd1cf2;
-            box-shadow: 0 0 30px #fd1cf2;
-    -webkit-transition: ease-in-out;
-    transition: ease-in-out;
-  }
-  .footer__color-fb:hover {
-    -webkit-box-shadow: 0 0 30px #1609c9;
-            box-shadow: 0 0 30px #1609c9;
-    -webkit-transition: ease-in-out;
-    transition: ease-in-out;
-  }
+@media only screen and (min-width: 1024px) and (max-width: 2561px) {
   /*--------------------INDEX--------------------*/
   /*---------------MAIN---------------*/
-  .navbar-mobile {
-    display: none;
+  main {
+    background-color: #ccd7e4;
   }
   .navbar-desktop {
     text-align: right;
@@ -501,6 +500,64 @@ main {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding: 1rem;
+  }
+  .navbar-mobile {
+    display: none;
+  }
+  /*---------------SECTIONS---------------*/
+  .phrase {
+    background-color: #CEEAF7;
+  }
+  .index__Videos {
+    background-color: #D5C9DF;
+  }
+  /*--------------------FOOD&DIET--------------------*/
+  /*---------------MAIN---------------*/
+  .food__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .food__main h1 {
+    font-size: 3.125rem;
+  }
+  .food__main h2 {
+    font-size: 1.92308rem;
+  }
+  /*---------------SECTIONS---------------*/
+  .food__recipes {
+    background-color: #DCB8CB;
+  }
+  .food__recipes card {
+    width: 24rem;
+  }
+  .food__recipes-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .modal__color {
+    background-color: #828a95;
+  }
+  /*---------------CARROUSEL---------------*/
+  .food__carousel {
+    background-color: #CEEAF7;
+  }
+  .food__carousel p {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
   /*--------------------EXERCISE--------------------*/
   /*---------------MAIN---------------*/
@@ -529,6 +586,12 @@ main {
   /*---------------SECTIONS---------------*/
   .exercise__description {
     padding: 1rem;
+  }
+  .exercise__pilates {
+    background-color: #D5C9DF;
+  }
+  .exercise__yoga {
+    background-color: #CEEAF7;
   }
   h3 {
     font-size: 3.33333rem;
@@ -584,6 +647,9 @@ main {
     font-size: 4rem;
   }
   /*---------------SECTIONS---------------*/
+  .medication__treat {
+    background-color: #CEEAF7;
+  }
   .medication__flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -616,6 +682,7 @@ main {
   }
   .medication__selfcare p {
     color: #d6d3d3;
+    padding: 1rem;
   }
   /*--------------------ABOUT--------------------*/
   /*---------------MAIN---------------*/
@@ -631,6 +698,9 @@ main {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .about__main h1 {
     font-size: 6rem;
@@ -644,9 +714,35 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .about__description-div {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .about__description-div p {
+    color: black;
+    padding: 0.5rem;
+  }
   /*---------------FORM---------------*/
+  .form__color {
+    background-color: #D5C9DF;
+  }
+  .form__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .form__flex img {
-    display: none;
+    width: 90%;
   }
   /*---------------BUTTONS---------------*/
   .button_animation:hover {
