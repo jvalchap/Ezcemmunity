@@ -73,6 +73,30 @@ button {
 }
 
 @media only screen and (max-width: 426px) {
+  .videos__size {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 1023px) {
+  .videos__size {
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 2561px) {
+  .videos__size {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 426px) {
   * {
     padding: 0rem;
     margin: 0rem;
@@ -86,6 +110,15 @@ button {
   .navbar-desktop {
     display: none;
   }
+  .index__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .index__main h1 {
     font-size: 3.57143rem;
   }
@@ -96,8 +129,17 @@ button {
   .phrase {
     background-color: #CEEAF7;
   }
-  .index__Videos {
+  .index__videos {
     background-color: #D5C9DF;
+  }
+  .index__videos-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   /*--------------------FOOD&DIET--------------------*/
   /*---------------MAIN---------------*/
@@ -109,6 +151,7 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    overflow: hidden;
   }
   .food__main h1 {
     font-size: 3.125rem;
@@ -146,6 +189,7 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: hidden;
   }
   .exercise__main h1 {
     font-size: 3.57143rem;
@@ -160,9 +204,17 @@ button {
   .exercise__yoga {
     background-color: #CEEAF7;
   }
-  .videos__size {
-    width: 24rem;
-    height: 15rem;
+  .exericse__yoga-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .exericse__yoga-flex div {
+    width: 100%;
   }
   /*--------------------MEDICATION--------------------*/
   /*---------------MAIN---------------*/
@@ -179,6 +231,7 @@ button {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    overflow: hidden;
   }
   .medication__main h1 {
     font-size: 4.16667rem;
@@ -230,6 +283,7 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: hidden;
   }
   .about__main h1 {
     font-size: 5rem;
@@ -282,6 +336,14 @@ button {
   }
   .index__main {
     padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
   }
   .index__main h1 {
     font-size: 6rem;
@@ -293,13 +355,23 @@ button {
   .phrase {
     background-color: #CEEAF7;
   }
-  .index__Videos {
+  .index__videos {
     background-color: #D5C9DF;
+  }
+  .index__videos-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   /*--------------------FOOD&DIET--------------------*/
   /*---------------MAIN---------------*/
   .food__main {
     padding: 1rem;
+    overflow: hidden;
   }
   .food__main h1 {
     font-size: 6rem;
@@ -351,6 +423,7 @@ button {
   /*---------------MAIN---------------*/
   .exercise__main {
     padding: 1rem;
+    overflow: hidden;
   }
   .exercise__main h1 {
     font-size: 4rem;
@@ -368,9 +441,18 @@ button {
   .exercise__yoga {
     background-color: #CEEAF7;
   }
-  .videos__size {
-    width: 46rem;
-    height: 30rem;
+  .exercise__yoga-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .exercise__yoga-flex div {
+    padding: 0.5rem;
+    width: 100%;
   }
   /*--------------------MEDICATION--------------------*/
   /*---------------MAIN---------------*/
@@ -388,6 +470,7 @@ button {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    overflow: hidden;
   }
   .medication__main h1 {
     font-size: 6rem;
@@ -431,6 +514,7 @@ button {
   /*---------------MAIN---------------*/
   .about__main {
     padding: 1rem;
+    overflow: hidden;
   }
   .about__main h1 {
     font-size: 6rem;
@@ -504,16 +588,7 @@ button {
   .navbar-mobile {
     display: none;
   }
-  /*---------------SECTIONS---------------*/
-  .phrase {
-    background-color: #CEEAF7;
-  }
-  .index__Videos {
-    background-color: #D5C9DF;
-  }
-  /*--------------------FOOD&DIET--------------------*/
-  /*---------------MAIN---------------*/
-  .food__main {
+  .index__main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -521,15 +596,88 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+    overflow: hidden;
   }
-  .food__main h1 {
-    font-size: 3.125rem;
+  .index__main h1 {
+    font-size: 5rem;
   }
-  .food__main h2 {
-    font-size: 1.92308rem;
+  .index__main h2 {
+    font-size: 3.8rem;
   }
   /*---------------SECTIONS---------------*/
+  .phrase {
+    background-color: #CEEAF7;
+  }
+  .phrase h3 {
+    font-size: 2rem;
+  }
+  .phrase:hover {
+    -webkit-box-shadow: 0 0 60px #2ee2fa;
+            box-shadow: 0 0 60px #2ee2fa;
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
+  }
+  .index__videos {
+    background-color: #D5C9DF;
+  }
+  .index__videos-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .index__videos-flex div {
+    padding: 0.5rem;
+    width: 100%;
+  }
+  .index__videos-flex iframe:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 30px #d44d4d;
+            box-shadow: 0 0 30px #d44d4d;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  /*--------------------FOOD&DIET--------------------*/
+  /*---------------MAIN---------------*/
+  .food__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  .food__main h1 {
+    font-size: 5rem;
+  }
+  .food__main h2 {
+    font-size: 2.5rem;
+  }
+  /*---------------SECTIONS---------------*/
+  .food__description {
+    padding: 1rem;
+  }
   .food__recipes {
+    padding: 1rem;
     background-color: #DCB8CB;
   }
   .food__recipes card {
@@ -559,6 +707,12 @@ button {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
+  .food__carousel h3 {
+    padding: 0.8rem;
+  }
+  .food__carousel h5 {
+    font-size: 3rem;
+  }
   /*--------------------EXERCISE--------------------*/
   /*---------------MAIN---------------*/
   .exercise__main {
@@ -566,22 +720,19 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    overflow: hidden;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .exercise__main h1 {
-    font-size: 4rem;
+    font-size: 4.28571rem;
   }
   .exercise__main h2 {
-    font-size: 3.33333rem;
+    font-size: 2.6087rem;
   }
   /*---------------SECTIONS---------------*/
   .exercise__description {
@@ -596,7 +747,7 @@ button {
   h3 {
     font-size: 3.33333rem;
   }
-  .pilates__flex-titulos {
+  #exercise__flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -604,27 +755,17 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
-  .pilates__flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  #exercise__flex div {
+    padding: 0.5rem;
+    width: 100%;
   }
-  .pilates__flex iframe {
-    width: 200%;
-  }
-  .videos__size {
-    width: 46rem;
-    height: 30rem;
+  #exercise__flex iframe:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 30px #d44d4d;
+            box-shadow: 0 0 30px #d44d4d;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
   /*--------------------MEDICATION--------------------*/
   /*---------------MAIN---------------*/
@@ -637,8 +778,13 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    overflow: hidden;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .medication__main h1 {
     font-size: 6rem;
@@ -701,6 +847,7 @@ button {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    overflow: hidden;
   }
   .about__main h1 {
     font-size: 6rem;
